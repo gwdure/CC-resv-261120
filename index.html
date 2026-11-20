@@ -1,372 +1,71 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>춘천두레생협 거두점 사전예약 카탈로그</title>
 <meta property="og:title" content="춘천두레생협 거두점 사전예약 카탈로그">
 <meta property="og:description" content="한우 스지수육 · 햇참깨·참기름 · 우리밀 베이커리 · 친환경 생유자 · 파김치 · 크리스마스 케이크">
 <meta property="og:image" content="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/16473C.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
-<style>
-:root{
---bg:#F6F3EC; --card:#FFFFFF; --ink:#1F2420; --sub:#5B625C;
---green:#2E5A3B; --green-soft:#E3ECE2; --sale:#B23A12; --line:#E6E1D6;
---xmas:#8E2A33; --xmas-soft:#F6E4E4;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-.wrap{max-width:480px;margin:0 auto;padding:20px 14px 36px}
-header{padding:6px 4px 14px}
-.eyebrow{font-size:13px;font-weight:700;color:var(--green)}
-h1{margin:6px 0 6px;font-size:27px;font-weight:900;line-height:1.28;letter-spacing:-.02em}
-.lead{margin:0;font-size:14px;color:var(--sub);line-height:1.55}
-.chips{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:10px 4px;margin:0 -14px;padding-left:18px;padding-right:18px;background:var(--bg);scrollbar-width:none}
-.chips::-webkit-scrollbar{display:none}
-.chips a{flex:none;font-size:13px;font-weight:500;color:var(--green);background:var(--green-soft);padding:8px 12px;border-radius:999px;text-decoration:none}
-.sec{margin:22px 2px 10px}
-.sec h2{margin:0;font-size:18px;font-weight:900;letter-spacing:-.01em}
-.sec .when{display:inline-block;margin-top:6px;font-size:13px;font-weight:700;color:var(--green);background:var(--green-soft);border-radius:8px;padding:5px 9px;line-height:1.4}
-.xmas .sec .when{color:var(--xmas);background:var(--xmas-soft)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.rail{display:grid;grid-auto-flow:column;grid-auto-columns:58%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -14px;padding:0 14px 6px;scrollbar-width:none}
-.rail::-webkit-scrollbar{display:none}
-.rail .card{scroll-snap-align:start}
-.hint{font-size:12px;color:var(--sub);margin:6px 2px 0}
-.card{background:var(--card);border-radius:14px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
-.wide{grid-column:1 / -1}
-.ph{position:relative;aspect-ratio:1/1;background:#EEE9DF}
-.wide .ph{aspect-ratio:16/10}
-.lbl{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;font-size:18px;font-weight:900;color:#7A6A4E;letter-spacing:-.02em}
-.ph img{position:relative;width:100%;height:100%;object-fit:cover;display:block}
-.tags{position:absolute;top:8px;left:8px;display:flex;gap:4px;flex-wrap:wrap}
-.tag{font-size:11px;font-weight:700;background:var(--green);color:#fff;padding:3px 7px;border-radius:6px}
-.tag.sale{background:var(--sale)}
-.tag.x{background:var(--xmas)}
-.body{padding:10px 11px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
-.code{font-size:11px;color:var(--sub);font-variant-numeric:tabular-nums}
-.name{margin:0;font-size:15px;font-weight:700;line-height:1.35;letter-spacing:-.01em}
-.wide .name{font-size:19px}
-.spec{font-size:12px;color:var(--sub)}
-.pt{margin:2px 0 0;font-size:13px;color:var(--ink);line-height:1.5}
-.price{margin-top:auto;padding-top:6px;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
-.now{font-size:18px;font-weight:900;color:var(--sale);font-variant-numeric:tabular-nums}
-.was{font-size:12px;color:var(--sub);text-decoration:line-through}
-.mini{font-size:12px;font-weight:500;color:var(--green)}
-.xmas .mini{color:var(--xmas)}
-details{border-top:1px solid var(--line);margin-top:8px;padding-top:2px}
-summary{cursor:pointer;font-size:12px;font-weight:700;color:var(--green);list-style:none;display:flex;align-items:center;gap:4px;min-height:34px}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+<style>:root{--bg:#F6F3EC;--card:#fff;--ink:#1F2420;--sub:#5B625C;--green:#2E5A3B;--gs:#E3ECE2;--sale:#B23A12;--line:#E6E1D6;--xm:#8E2A33;--xs:#F6E4E4}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;font-size:17px;word-break:keep-all;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+.wrap{max-width:560px;margin:0 auto;padding:0 14px 24px}
+img{display:block}
+.hero{background:linear-gradient(180deg,#173F2C,#2D6A4A);color:#fff;margin:0 -14px;padding:16px 18px 18px;border-radius:0 0 22px 22px}
+.hero .ey{font-size:15px;font-weight:700;color:#FFD166}
+.hero h1{margin:2px 0 0;font-size:28px;line-height:1.25;font-weight:900;letter-spacing:-.03em}
+.hero p{margin:4px 0 0;font-size:16px;color:#DCEFE3}
+.sh{margin:18px 2px 8px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.sh h2{margin:0;font-size:22px;font-weight:900;letter-spacing:-.02em}
+.when{font-size:16px;font-weight:900;color:var(--green);background:#FFE8A3;border-radius:8px;padding:3px 10px}
+.xm .when{color:var(--xm)}
+.list{display:grid;gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;scroll-margin-top:10px}
+.rw{display:grid;grid-template-columns:104px minmax(0,1fr);gap:12px;align-items:center}
+.th{width:104px;height:104px;border-radius:10px;object-fit:cover;background:#EEE9DF}
+.cd{font-size:14px;color:var(--sub)}
+.card h3{margin:0;font-size:20px;line-height:1.3;font-weight:900;letter-spacing:-.02em}
+.sp{display:block;font-size:14px;color:var(--sub)}
+.pr{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 6px;margin-top:2px}
+.pr b{font-size:24px;font-weight:900;color:var(--sale);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.pr s{font-size:14px;color:var(--sub)}
+.pr em{font-style:normal;font-size:14px;font-weight:900;color:#fff;background:var(--sale);border-radius:99px;padding:0 7px}
+.pt{margin:8px 0 0;font-size:16px;line-height:1.5}
+.dt{margin-top:8px;font-size:16px;font-weight:900;color:var(--green);background:#FFE8A3;border-radius:8px;padding:4px 10px;display:inline-block}
+details{margin-top:6px;border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:4px;min-height:40px;font-size:15px;font-weight:700;color:var(--green)}
 summary::-webkit-details-marker{display:none}
-summary svg{transition:transform .2s;flex:none}
-details[open] summary svg{transform:rotate(180deg)}
-details ul{margin:0 0 4px;padding-left:16px;font-size:12.5px;line-height:1.6;color:var(--ink)}
-details li{margin-bottom:3px}
-.story{margin:2px 0 8px;font-size:14px;line-height:1.7}
-.story b{color:var(--green)}
-body{font-size:18px;word-break:keep-all}
-.wrap{max-width:560px;padding:22px 16px 40px}
-.eyebrow{font-size:16px}
-h1{font-size:34px}
-.lead{font-size:17px}
-.chips a{font-size:16px;padding:10px 15px}
-.sec{margin:30px 2px 12px}
-.sec h2{font-size:25px}
-.sec .when{font-size:17px;padding:7px 11px}
-.grid{grid-template-columns:1fr;gap:16px}
-.ph,.wide .ph{aspect-ratio:16/10}
-.lbl{font-size:26px}
-.tags{top:12px;left:12px;gap:6px}
-.tag{font-size:15px;padding:5px 11px;border-radius:8px}
-.body{padding:16px 16px 16px;gap:6px}
-.code{font-size:14px}
-.name,.wide .name{font-size:25px;line-height:1.3}
-.spec{font-size:16px}
-.pt{font-size:17.5px;line-height:1.6}
-.price{padding-top:8px;gap:10px}
-.now{font-size:34px;letter-spacing:-.02em}
-.was{font-size:17px}
-.mini{font-size:16px;line-height:1.5}
-summary{font-size:16px;min-height:44px}
-summary svg{width:16px;height:16px}
-details ul{font-size:16px;line-height:1.65;padding-left:20px}
-.story{font-size:17px}
-.rail{grid-auto-columns:84%;gap:12px;margin:0 -16px;padding:0 16px 8px}
-.rail .ph{aspect-ratio:4/3}
-.hint{font-size:15px;margin-top:8px}
-.store{margin-top:16px;padding:16px;background:var(--green-soft);border-radius:14px;font-size:16px;line-height:1.6}
-.store b{display:block;font-size:19px;color:var(--green)}
-body{padding-bottom:96px}
-.fixbar{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:12px 14px calc(12px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,rgba(246,243,236,0),var(--bg) 40%)}
-.fixbar .in{max-width:560px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.fixbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:56px;border-radius:99px;font-size:18px;font-weight:900;text-decoration:none;box-shadow:0 6px 14px rgba(0,0,0,.18)}
-.fixbar .tel{background:var(--green);color:#fff}
-.fixbar .kk{background:#FEE500;color:#191919}
-@media (max-width:360px){.fixbar a{font-size:16px}.now{font-size:30px}.name,.wide .name{font-size:22px}h1{font-size:30px}}
-.hero{background:linear-gradient(180deg,#173F2C 0%,#2D6A4A 100%);color:#fff;margin:-22px -16px 0;padding:26px 20px 24px;border-radius:0 0 26px 26px}
-.hero .eyebrow{color:#FFD166}
-.hero h1{color:#fff}
-.hero .lead{color:#DCEFE3}
-.hero .lead b{color:#FFD166}
-.mq{margin:16px -16px 0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
-.mq-t{display:flex;gap:12px;width:max-content;padding:4px 0 8px;animation:mq 55s linear infinite}
-.mq:hover .mq-t,.mq:active .mq-t{animation-play-state:paused}
-@keyframes mq{to{transform:translateX(calc(-50% - 6px))}}
-@media (prefers-reduced-motion:reduce){.mq{overflow-x:auto}.mq-t{animation:none}}
-.mq-i{flex:none;width:150px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:var(--ink);display:flex;flex-direction:column}
-.mq-i img{width:150px;height:112px;object-fit:cover;display:block;background:#EEE9DF}
-.mq-i b{padding:8px 10px 0;font-size:15px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.mq-i span{padding:0 10px 10px;font-size:17px;font-weight:900;color:var(--sale)}
-.card{scroll-margin-top:12px}
-.note{margin-top:22px;padding:14px 16px;background:var(--card);border:1px solid var(--line);border-radius:14px;font-size:15px;color:var(--sub);line-height:1.6}
-</style>
-</head>
-<body>
-<div class="wrap">
-<header class="hero">
-<div class="eyebrow">춘천두레생협 거두점 · 사전예약 카탈로그</div>
-<h1>미리 예약하고<br>제때 받아 가세요</h1>
-<p class="lead">상품마다 예약 마감일과 받는 날이 달라요. 사진 아래 <b>생활재 정보</b>를 누르면 특징과 드시는 법이 나와요.</p>
-</header>
-<div class="mq" aria-label="이번 사전예약 생활재"><div class="mq-t"><a class="mq-i" href="#p57648"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/57648C.jpg" alt=""><b>한우 스지수육</b><span>14,000원</span></a><a class="mq-i" href="#p60726"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60726C.jpg" alt=""><b>햇 발아볶은참깨</b><span>7,800원</span></a><a class="mq-i" href="#p60724"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60724C.jpg" alt=""><b>햇 발아참기름</b><span>15,600원</span></a><a class="mq-i" href="#p55531"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55531C.jpg" alt=""><b>대파치즈 베이글</b><span>3,900원</span></a><a class="mq-i" href="#p55530"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55530C.jpg" alt=""><b>올리브 치아바타</b><span>4,300원</span></a><a class="mq-i" href="#p55529"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55529C.jpg" alt=""><b>치즈 치아바타</b><span>4,300원</span></a><a class="mq-i" href="#p16473"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/16473C.jpg" alt=""><b>친환경 생유자</b><span>14,900원</span></a><a class="mq-i" href="#p60790"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60790C.png" alt=""><b>파김치</b><span>12,800원</span></a><a class="mq-i" href="#p58622"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58622C.jpg" alt=""><b>생크림케이크</b><span>33,000원</span></a><a class="mq-i" href="#p58600"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58600C.jpg" alt=""><b>가나슈케이크</b><span>35,500원</span></a><a class="mq-i" href="#p58601"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58601C.jpg" alt=""><b>고구마케이크</b><span>35,500원</span></a><a class="mq-i" href="#p58599"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58599C.jpg" alt=""><b>치즈케이크</b><span>35,500원</span></a><a class="mq-i" href="#p42189"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/42189C.jpg" alt=""><b>잼롤케이크</b><span>18,600원</span></a><a class="mq-i" href="#p56747"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/56747C.jpg" alt=""><b>호두파이</b><span>15,500원</span></a><a class="mq-i" href="#p57648" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/57648C.jpg" alt=""><b>한우 스지수육</b><span>14,000원</span></a><a class="mq-i" href="#p60726" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60726C.jpg" alt=""><b>햇 발아볶은참깨</b><span>7,800원</span></a><a class="mq-i" href="#p60724" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60724C.jpg" alt=""><b>햇 발아참기름</b><span>15,600원</span></a><a class="mq-i" href="#p55531" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55531C.jpg" alt=""><b>대파치즈 베이글</b><span>3,900원</span></a><a class="mq-i" href="#p55530" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55530C.jpg" alt=""><b>올리브 치아바타</b><span>4,300원</span></a><a class="mq-i" href="#p55529" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55529C.jpg" alt=""><b>치즈 치아바타</b><span>4,300원</span></a><a class="mq-i" href="#p16473" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/16473C.jpg" alt=""><b>친환경 생유자</b><span>14,900원</span></a><a class="mq-i" href="#p60790" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60790C.png" alt=""><b>파김치</b><span>12,800원</span></a><a class="mq-i" href="#p58622" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58622C.jpg" alt=""><b>생크림케이크</b><span>33,000원</span></a><a class="mq-i" href="#p58600" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58600C.jpg" alt=""><b>가나슈케이크</b><span>35,500원</span></a><a class="mq-i" href="#p58601" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58601C.jpg" alt=""><b>고구마케이크</b><span>35,500원</span></a><a class="mq-i" href="#p58599" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58599C.jpg" alt=""><b>치즈케이크</b><span>35,500원</span></a><a class="mq-i" href="#p42189" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/42189C.jpg" alt=""><b>잼롤케이크</b><span>18,600원</span></a><a class="mq-i" href="#p56747" aria-hidden="true" tabindex="-1"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/56747C.jpg" alt=""><b>호두파이</b><span>15,500원</span></a></div></div>
-<section id="week">
-<div class="sec">
-<h2>다음 주 받는 사전예약</h2>
-<span class="when">11/23(월) ~ 11/28(토) 공급</span>
+details[open]>summary svg{transform:rotate(180deg)}
+details ul{margin:0 0 4px;padding-left:20px;font-size:15px;line-height:1.6}
+.st{margin:0 0 4px;font-size:15px;line-height:1.6}.st b{color:var(--green)}
+.ck img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;background:#EEE9DF}
+.ck b{display:block;margin-top:6px;font-size:15px;line-height:1.3}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:42%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -14px;padding:0 14px 4px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.ck{scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:8px;scroll-margin-top:10px}
+.ck{position:relative}.ck .pr b{font-size:20px}
+.bd{position:absolute;top:14px;left:14px;font-style:normal;font-size:14px;font-weight:900;color:#fff;background:var(--sale);border-radius:99px;padding:1px 8px}
+details ul b{color:var(--green)}
+.ck .x{display:block;font-size:14px;font-weight:700;color:var(--xm)}
+.hint{margin:4px 2px 0;font-size:14px;color:var(--sub)}
+.store{margin-top:16px;padding:12px 14px;background:var(--gs);border-radius:14px;font-size:15px;line-height:1.55}
+.store b{font-size:17px;color:var(--green)}
+.fix{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,rgba(246,243,236,0),var(--bg) 40%)}
+.fix div{max-width:560px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fix a{display:flex;align-items:center;justify-content:center;gap:6px;min-height:52px;border-radius:99px;font-size:17px;font-weight:900;text-decoration:none;box-shadow:0 6px 14px rgba(0,0,0,.18)}
+.fix .t{background:var(--green);color:#fff}.fix .k{background:#FEE500;color:#191919}
+@media (max-width:360px){.ci b{font-size:14px}.rw{grid-template-columns:88px minmax(0,1fr)}.th{width:88px;height:88px}.fix a{font-size:16px}}
+.cat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.ci{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.ci img{width:100%;aspect-ratio:4/3;object-fit:cover;background:#EEE9DF}
+.ci b{display:block;padding:5px 7px 0;font-size:15px;line-height:1.3;letter-spacing:-.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ci span{display:block;padding:0 7px 6px;font-size:15px;font-weight:900;color:var(--sale)}</style></head><body><div class="wrap">
+<header class="hero"><div class="ey">춘천두레생협 거두점 · 사전예약</div><h1>미리 예약하고 제때 받아 가세요</h1><p>상품마다 마감일·받는 날을 꼭 확인하세요.</p></header>
+<div class="cat"><div class="ci"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/16473C.jpg" alt="친환경 생유자"><b>친환경 생유자</b><span>14,900원</span></div><div class="ci"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60790C.png" alt="파김치"><b>파김치</b><span>12,800원</span></div><div class="ci"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58622C.jpg" alt="케이크·호두파이"><b>케이크·호두파이</b><span>6종</span></div><div class="ci"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55529C.jpg" alt="베이글·치아바타"><b>베이글·치아바타</b><span>3종 3,900원~</span></div><div class="ci"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/57648C.jpg" alt="한우 스지수육"><b>한우 스지수육</b><span>14,000원</span></div><div class="ci"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60724C.jpg" alt="햇참깨·참기름"><b>햇참깨·참기름</b><span>7,800원~</span></div></div>
+<section><div class="sh"><h2>다음 주 공급</h2><span class="when">11/23(월)~11/28(토)</span></div>
+<div class="rail"><div class="ck" id="p57648"><i class="bd">7%</i><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/57648C.jpg" alt="한우사태스지수육"><b>한우사태스지수육</b><span class="sp">200g · 냉동 · 한정수량</span><div class="pr"><b>14,000원</b><s>15,000원</s></div></div><div class="ck" id="p60726"><i class="bd">20%</i><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60726C.jpg" alt="(햇)발아볶은참깨"><b>(햇)발아볶은참깨</b><span class="sp">120g</span><div class="pr"><b>7,800원</b><s>9,800원</s></div></div><div class="ck" id="p60724"><i class="bd">20%</i><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60724C.jpg" alt="(햇)발아참기름"><b>(햇)발아참기름</b><span class="sp">160ml</span><div class="pr"><b>15,600원</b><s>19,500원</s></div></div><div class="ck" id="p55531"><i class="bd">13%</i><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55531C.jpg" alt="대파치즈 베이글"><b>대파치즈 베이글</b><span class="sp">145g</span><div class="pr"><b>3,900원</b><s>4,500원</s></div></div><div class="ck" id="p55530"><i class="bd">12%</i><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55530C.jpg" alt="올리브 치아바타"><b>올리브 치아바타</b><span class="sp">냉동</span><div class="pr"><b>4,300원</b><s>4,900원</s></div></div><div class="ck" id="p55529"><i class="bd">12%</i><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/55529C.jpg" alt="치즈 치아바타"><b>치즈 치아바타</b><span class="sp">130g</span><div class="pr"><b>4,300원</b><s>4,900원</s></div></div></div><p class="hint">옆으로 넘겨 6가지를 보세요 →</p><details><summary>생활재 정보 한눈에 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><ul><li><b>스지수육</b>(두레축산·강원 화천): 부드러운 사태와 쫀득한 스지. 끓는 물에 데우기만 하면 끝</li><li><b>햇참깨·참기름</b>(청오건강): 싹 틔운 2026년 국산 햇참깨 100%, 참기름은 딱 한 번만 짠 첫 기름</li><li><b>베이글·치아바타</b>(네니아): 유기농 우리밀, 자연치즈, 방부제 없음 · 냉동 보관, 해동 후 데워 드세요</li></ul></details></section>
+<section><div class="sh"><h2>12월 초 받는 예약</h2></div><div class="list"><article class="card row" id="p16473"><div class="rw"><img class="th" src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/16473C.jpg" alt="껍질째 먹으니까, 친환경 생유자"><div class="tx"><div class="cd">16473 · 두레올팜넷</div><h3>껍질째 먹으니까, 친환경 생유자</h3><div class="sp">1kg · 무농약 · 전남 고흥</div><div class="pr"><b>14,900원</b></div></div></div><p class="pt">조금 작고 거친 부분이 있지만, 친환경으로 키웠으니 껍질까지 안심!</p><div class="dt">~11/26(목) 예약 · 12/1~12/2 받는 날</div><details><summary>유자청 담그는 법 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p class="st">원하는 대로 <b>당을 조절해 유자청을 담글 수 있다</b>는 점도 큰 장점이죠!</p><ul><li>씻어서 물기를 완전히 닦고 4등분</li><li>껍질은 얇게 채 썰고, 과육은 씨 빼고 갈기</li><li>설탕에 버무려 유리병에 밀봉, 서늘한 곳 15일쯤</li></ul></details></article><article class="card row" id="p60790"><div class="rw"><img class="th" src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/60790C.png" alt="생산지 살리기 파김치"><div class="tx"><div class="cd">60790 · 담채원</div><h3>생산지 살리기 파김치</h3><div class="sp">1kg · 냉장 · 국산 쪽파 66%</div><div class="pr"><b>12,800원</b></div></div></div><p class="pt">첫맛은 알싸하게, 끝맛은 개운하게. 고기·라면·밥에 딱.</p><div class="dt">~12/1(화) 예약 · 12/3(목) 공급</div><details><summary>생활재 정보 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><ul><li>식품첨가물 없이 국내산 농산물로 담금</li><li>익지 않은 상태로 보내요. 입맛에 맞게 익혀 드세요.</li><li>국물에 잠기게 담아 냉장 보관</li></ul></details></article></div></section>
+<section class="xm"><div class="sh"><h2>크리스마스 케이크·호두파이</h2><span class="when">~12/18(금) 예약 · 12/22~12/24 받는 날</span></div>
+<div class="rail"><div class="ck" id="p58622"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58622C.jpg" alt="생크림케이크"><b>생크림케이크</b><span class="sp">1호 450g · 냉장</span><div class="pr"><b>33,000원</b><s>39,000원</s></div><span class="x">받는 날 12/21~12/25</span></div><div class="ck" id="p58600"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58600C.jpg" alt="가나슈케이크"><b>가나슈케이크</b><span class="sp">1호 550g · 냉동</span><div class="pr"><b>35,500원</b><s>42,000원</s></div></div><div class="ck" id="p58601"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58601C.jpg" alt="고구마케이크"><b>고구마케이크</b><span class="sp">1호 730g · 냉동</span><div class="pr"><b>35,500원</b><s>42,000원</s></div></div><div class="ck" id="p58599"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/58599C.jpg" alt="치즈케이크"><b>치즈케이크</b><span class="sp">1호 500g · 냉동</span><div class="pr"><b>35,500원</b><s>42,000원</s></div></div><div class="ck" id="p42189"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/42189C.jpg" alt="잼롤케이크"><b>잼롤케이크</b><span class="sp">600g</span><div class="pr"><b>18,600원</b></div></div><div class="ck" id="p56747"><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage_480;v=20261116/56747C.jpg" alt="호두파이"><b>호두파이</b><span class="sp">260g</span><div class="pr"><b>15,500원</b><s>17,200원</s></div></div></div><p class="hint">옆으로 넘겨 6가지를 보세요 →</p></section>
+<div class="store"><b>춘천두레생협 거두점</b> · 공지로 70-61 (거두리하나로마트 인근)<br>평일 10~20시 · 토 10~19시 · 공휴일 10~18시 · 일요일 휴무<br>가격은 조합원가 · 한정수량은 조기 마감될 수 있어요.</div>
 </div>
-<div class="grid">
-<article id="p57648" class="card wide">
-<div class="ph"><span class="lbl">한우사태스지수육</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/57648C.jpg" alt="한우사태스지수육" loading="lazy">
-<div class="tags"><span class="tag sale">7%</span><span class="tag">한정수량</span></div></div>
-<div class="body">
-<div class="code">57648 · 두레축산(강원 화천)</div>
-<h3 class="name">한우사태스지수육</h3>
-<div class="spec">200g · 냉동</div>
-<p class="pt">부드러운 한우 사태와 쫀득한 스지를 그대로 담았어요. 데우기만 하면 바로 수육 한 접시.</p>
-<div class="price"><span class="now">14,000원</span><span class="was">15,000원</span></div>
-<details><summary>생활재 정보 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-<ul>
-<li>원재료: 한우정육(국산) 99.85%, 소금(국산)</li>
-<li>냉장실에서 4~6시간 해동 → 끓는 물에 3분 데워 드세요.</li>
-<li>냉동 상태 그대로: 봉지째 끓는 물에 중불 5분, 또는 전자레인지(700W) 약 4분</li>
-<li>해동 후 재냉동하지 마세요.</li>
-</ul></details>
-</div>
-</article>
-<article id="p60726" class="card">
-<div class="ph"><span class="lbl">햇 발아볶은참깨</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/60726C.jpg" alt="햇 발아볶은참깨" loading="lazy">
-<div class="tags"><span class="tag sale">20%</span><span class="tag">2026 햇참깨</span></div></div>
-<div class="body">
-<div class="code">60726 · 청오건강</div>
-<h3 class="name">(햇)발아볶은참깨</h3>
-<div class="spec">120g · 국산 참깨 100%</div>
-<p class="pt">싹 틔운 햇참깨를 알맞게 볶아 고소함이 진해요.</p>
-<div class="price"><span class="now">7,800원</span><span class="was">9,800원</span></div>
-<details><summary>생활재 정보 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-<ul>
-<li>2026년 가을 수확 국산 햇참깨</li>
-<li>발아 중 여러 번 세척해 깨끗해요.</li>
-<li>나물·비빔밥·양념장·샐러드에 톡톡</li>
-<li>받으신 뒤 냉장 보관하세요.</li>
-</ul></details>
-</div>
-</article>
-<article id="p60724" class="card">
-<div class="ph"><span class="lbl">햇 발아참기름</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/60724C.jpg" alt="햇 발아참기름" loading="lazy">
-<div class="tags"><span class="tag sale">20%</span><span class="tag">2026 햇참깨</span></div></div>
-<div class="body">
-<div class="code">60724 · 청오건강</div>
-<h3 class="name">(햇)발아참기름</h3>
-<div class="spec">160ml · 국산 참깨 100%</div>
-<p class="pt">싹 틔운 햇참깨를 딱 한 번만 짠 맑고 진한 첫 기름.</p>
-<div class="price"><span class="now">15,600원</span><span class="was">19,500원</span></div>
-<details><summary>생활재 정보 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-<ul>
-<li>압착 공법으로 한 번만 착유</li>
-<li>특허 공법(새싹을 틔운 곡물 기름 제조)</li>
-<li>나물·비빔밥·국수 마무리에 한두 방울</li>
-<li>개봉 후 뚜껑 닫아 냉장 보관</li>
-</ul></details>
-</div>
-</article>
-<article id="p55531" class="card">
-<div class="ph"><span class="lbl">대파치즈 베이글</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/55531C.jpg" alt="대파치즈 베이글" loading="lazy">
-<div class="tags"><span class="tag sale">13%</span></div></div>
-<div class="body">
-<div class="code">55531 · 네니아</div>
-<h3 class="name">대파치즈 베이글</h3>
-<div class="spec">145g · 냉동</div>
-<p class="pt">유기농 대파와 자연치즈를 넣은 쫄깃한 우리밀 베이글.</p>
-<div class="price"><span class="now">3,900원</span><span class="was">4,500원</span></div>
-<details><summary>생활재 정보 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-<ul>
-<li>유기농 국산 밀가루, 화학첨가물 없는 자연치즈</li>
-<li>1시간 해동 → 에어프라이어 160℃ 10~12분</li>
-<li>반 갈라 약불 팬에 3~5분 구워도 좋아요.</li>
-<li>방부제가 없어 드실 만큼만 꺼내 드세요.</li>
-</ul></details>
-</div>
-</article>
-<article id="p55530" class="card">
-<div class="ph"><span class="lbl">올리브 치아바타</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/55530C.jpg" alt="올리브 치아바타" loading="lazy">
-<div class="tags"><span class="tag sale">12%</span></div></div>
-<div class="body">
-<div class="code">55530 · 네니아</div>
-<h3 class="name">올리브 치아바타</h3>
-<div class="spec">냉동</div>
-<p class="pt">블랙 올리브가 콕콕, 촉촉하고 폭신한 소프트 치아바타.</p>
-<div class="price"><span class="now">4,300원</span><span class="was">4,900원</span></div>
-<details><summary>생활재 정보 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-<ul>
-<li>유기농 국산 밀가루, 유기농 압착 올리브유</li>
-<li>30분 해동 → 전자레인지 40초~1분</li>
-<li>팬에 앞뒤로 30초~1분 구워도 좋아요.</li>
-<li>올리브유·수프에 찍어 먹거나 샌드위치로</li>
-</ul></details>
-</div>
-</article>
-<article id="p55529" class="card">
-<div class="ph"><span class="lbl">치즈 치아바타</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/55529C.jpg" alt="치즈 치아바타" loading="lazy">
-<div class="tags"><span class="tag sale">12%</span></div></div>
-<div class="body">
-<div class="code">55529 · 네니아</div>
-<h3 class="name">치즈 치아바타</h3>
-<div class="spec">130g · 냉동</div>
-<p class="pt">짭조름한 자연치즈를 넣어 풍미가 깊은 소프트 치아바타.</p>
-<div class="price"><span class="now">4,300원</span><span class="was">4,900원</span></div>
-<details><summary>생활재 정보 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-<ul>
-<li>유기농 국산 밀가루, 화학첨가물 없는 자연치즈</li>
-<li>30분 해동 → 전자레인지 40초~1분</li>
-<li>팬에 앞뒤로 30초~1분 구워도 좋아요.</li>
-<li>남은 빵은 지퍼백에 밀봉해 냉동 보관</li>
-</ul></details>
-</div>
-</article>
-</div>
-</section>
-<section id="dec">
-<div class="sec">
-<h2>12월 초 받는 사전예약</h2>
-</div>
-<div class="grid">
-<article id="p16473" class="card wide">
-<div class="ph"><span class="lbl">친환경 생유자</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/16473C.jpg" alt="친환경 생유자" loading="lazy">
-<div class="tags"><span class="tag">무농약</span><span class="tag">전남 고흥</span></div></div>
-<div class="body">
-<div class="code">16473 · 두레올팜넷</div>
-<h3 class="name">껍질째 먹으니까, 친환경 생유자</h3>
-<div class="spec">1kg · 무농약 인증</div>
-<p class="pt">껍질째 먹는 유자는 친환경인지 확인하세요! 조금 작고 거친 부분이 있지만, 친환경으로 키웠으니 안심하고 드실 수 있어요.</p>
-<div class="price"><span class="now">14,900원</span><span class="mini">· 11/26(목)까지 예약 · 12/1~12/2 받는 날</span></div>
-<details><summary>유자청 담그는 법 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-<p class="story">원하는 대로 <b>당을 조절해 유자청을 담글 수 있다</b>는 점도 빼놓을 수 없는 장점이죠!</p>
-<ul>
-<li>흐르는 물에 씻어 물기를 완전히 닦아 주세요.</li>
-<li>4등분해 껍질과 과육을 나누고, 껍질은 얇게 채 썰어요.</li>
-<li>과육은 씨를 발라 믹서에 갈아 주세요.</li>
-<li>껍질·과육을 설탕에 버무려 유리병에 담고, 밀봉해 서늘한 곳에 15일쯤 두면 유자청 완성!</li>
-<li>생으로는 시고 써요. 유자청·유자차·유자잼으로 드세요. 오래 두실 땐 냉장 보관.</li>
-</ul></details>
-</div>
-</article>
-<article id="p60790" class="card wide">
-<div class="ph"><span class="lbl">생산지 살리기 파김치</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/60790C.png" alt="생산지 살리기 파김치" loading="lazy">
-<div class="tags"><span class="tag">생산지 살리기</span><span class="tag">국산 쪽파</span></div></div>
-<div class="body">
-<div class="code">60790 · 담채원</div>
-<h3 class="name">생산지 살리기 파김치</h3>
-<div class="spec">1kg · 냉장</div>
-<p class="pt">첫맛은 알싸하게, 끝맛은 깊고 개운하게. 고기·라면·갓 지은 밥 어디에나 잘 어울려요.</p>
-<div class="price"><span class="now">12,800원</span><span class="mini">· 12/1(화)까지 예약 · 12/3(목) 공급</span></div>
-<details><summary>생활재 정보 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-<ul>
-<li>식품첨가물 없이 국내산 농산물로 담갔어요.</li>
-<li>원재료: 쪽파(국산) 66%, 고춧가루(국산), 멸치액젓·새우젓(국산), 유기설탕, 천일염</li>
-<li>익지 않은 상태로 보내드려요. 맛보고 입맛에 맞게 익혀 드세요.</li>
-<li>국물에 잠기게 좁고 긴 용기에 담아 냉장 보관</li>
-</ul></details>
-</div>
-</article>
-</div>
-</section>
-<section id="xmas" class="xmas">
-<div class="sec">
-<h2>크리스마스 케이크 5종 · 호두파이</h2>
-<span class="when">12/18(금)까지 예약 · 12/22~12/24 받는 날</span>
-</div>
-<div class="rail">
-<article id="p58622" class="card">
-<div class="ph"><span class="lbl">생크림케이크</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/58622C.jpg" alt="생크림케이크" loading="lazy">
-<div class="tags"><span class="tag x">15%</span><span class="tag x">냉장</span></div></div>
-<div class="body">
-<h3 class="name">생크림케이크</h3>
-<div class="spec">1호 · 450g</div>
-<p class="pt">우리밀 시트에 국산 생크림 듬뿍, 딸기잼으로 새콤달콤.</p>
-<div class="price"><span class="now">33,000원</span><span class="was">39,000원</span></div>
-<div class="mini">받는 날 12/21~12/25</div>
-</div>
-</article>
-<article id="p58600" class="card">
-<div class="ph"><span class="lbl">가나슈케이크</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/58600C.jpg" alt="가나슈케이크" loading="lazy">
-<div class="tags"><span class="tag x">15%</span><span class="tag x">냉동</span></div></div>
-<div class="body">
-<h3 class="name">가나슈케이크</h3>
-<div class="spec">1호 · 550g</div>
-<p class="pt">촉촉한 초코 시트에 다크초콜릿 크림이 층층이, 진하고 묵직하게.</p>
-<div class="price"><span class="now">35,500원</span><span class="was">42,000원</span></div>
-</div>
-</article>
-<article id="p58601" class="card">
-<div class="ph"><span class="lbl">고구마케이크</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/58601C.jpg" alt="고구마케이크" loading="lazy">
-<div class="tags"><span class="tag x">15%</span><span class="tag x">냉동</span></div></div>
-<div class="body">
-<h3 class="name">고구마케이크</h3>
-<div class="spec">1호 · 730g</div>
-<p class="pt">국산 고구마 무스와 촉촉한 시트, 온 가족이 좋아하는 맛.</p>
-<div class="price"><span class="now">35,500원</span><span class="was">42,000원</span></div>
-</div>
-</article>
-<article id="p58599" class="card">
-<div class="ph"><span class="lbl">치즈케이크</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/58599C.jpg" alt="치즈케이크" loading="lazy">
-<div class="tags"><span class="tag x">15%</span><span class="tag x">냉동</span></div></div>
-<div class="body">
-<h3 class="name">치즈케이크</h3>
-<div class="spec">1호 · 500g</div>
-<p class="pt">크림치즈 48%와 국산 생크림으로 진한 치즈 풍미.</p>
-<div class="price"><span class="now">35,500원</span><span class="was">42,000원</span></div>
-</div>
-</article>
-<article id="p42189" class="card">
-<div class="ph"><span class="lbl">잼롤케이크</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/42189C.jpg" alt="잼롤케이크" loading="lazy">
-<div class="tags"><span class="tag x">선물용 상자</span></div></div>
-<div class="body">
-<h3 class="name">잼롤케이크</h3>
-<div class="spec">600g</div>
-<p class="pt">국산 밀과 유정란 카스텔라에 국산 딸기잼을 돌돌.</p>
-<div class="price"><span class="now">18,600원</span></div>
-</div>
-</article>
-<article id="p56747" class="card">
-<div class="ph"><span class="lbl">호두파이</span><img src="https://dureimg.ecoop.or.kr:9091/Delsys/DLOG/Goods/GoodsMaster/GoodsImage;v=20261116/56747C.jpg" alt="호두파이" loading="lazy">
-<div class="tags"><span class="tag x">10%</span></div></div>
-<div class="body">
-<h3 class="name">호두파이</h3>
-<div class="spec">260g</div>
-<p class="pt">무농약 통밀가루와 국산 호두로 구웠어요. 따뜻하게 데워 차와 함께.</p>
-<div class="price"><span class="now">15,500원</span><span class="was">17,200원</span></div>
-</div>
-</article>
-</div>
-<p class="hint">옆으로 넘겨 6가지를 모두 보세요 →</p>
-</section>
-<p class="note">가격은 조합원가 기준이에요. 한정수량 생활재는 조기 마감될 수 있어요.</p>
-<div class="store"><b>춘천두레생협 거두점</b>공지로 70-61 (거두리하나로마트 인근)<br>평일 10~20시 · 토 10~19시 · 공휴일 10~18시 · 일요일 휴무<br>전화 033-264-6294</div>
-</div>
-<nav class="fixbar" aria-label="문의"><div class="in">
-<a class="tel" href="tel:033-264-6294"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>전화 문의하기</a>
-<a class="kk" href="https://pf.kakao.com/_wxliTn/chat"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7l-1 3.6c-.1.3.3.6.6.4l4.2-2.8c.5.1 1 .1 1.5.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>카톡 문의하기</a>
-</div></nav>
-<script>document.querySelectorAll(".ph img").forEach(function(i){function h(){i.style.display="none"}if(i.complete&&!i.naturalWidth)h();i.addEventListener("error",h)});</script>
-</body>
-</html>
+<nav class="fix" aria-label="문의"><div><a class="t" href="tel:033-264-6294">전화 문의하기</a><a class="k" href="https://pf.kakao.com/_wxliTn/chat">카톡 문의하기</a></div></nav>
+</body></html>
